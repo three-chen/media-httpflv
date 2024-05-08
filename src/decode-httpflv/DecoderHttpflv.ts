@@ -36,6 +36,7 @@ export class DecoderHttpflv {
 
   public attachMediaElement() {
     if (this.container && this.player) {
+      console.log('attachMediaElement DecoderHttpflv', JSON.stringify(this.container))
       this.player.attachMediaElement(this.container)
     }
   }
